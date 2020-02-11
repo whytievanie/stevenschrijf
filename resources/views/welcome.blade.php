@@ -118,7 +118,8 @@
             <div class="books">
                 <div class="booksrowfirst">
                     <div class="firstbook">
-                        <form action="{{ route('cart.add',$product ?? '') }}" class="booksform" method="POST">
+                    @foreach($products as $item => $product)
+                        <form action="{{ route('cart.add',$product) }}" class="booksform" method="POST">
                             <!-- @method('GET') -->
                             @csrf
                             <img class="bookimg" src="/storage/img/Allesmag.png" alt="logo">
@@ -127,6 +128,7 @@
                                 <p class="bookprice">€ 22,50</p>
                                 <button class="shop-item-button"><img class="cartphoto" src="/storage/img/cart.png" alt="cart"></button>
                             </div>
+                            @endforeach
                         </form>
                     </div>  
                     

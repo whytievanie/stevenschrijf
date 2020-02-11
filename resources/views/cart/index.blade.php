@@ -16,7 +16,12 @@
 
     <header>
         <div>
+
             <h1>Uw winkelwagentje</h1>
+
+            @foreach($products as $item => $product)
+
+            $cart = App/Model/Cart::all();
 
             @forelse($cart as $items)
             
@@ -27,6 +32,8 @@
             <p>No items</p>
             
             @endforelse
+
+            @endforeach
         </div>
     </header>
 
