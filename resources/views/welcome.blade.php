@@ -79,7 +79,7 @@
                     <img src="/storage/img/logosteven.jpg" alt="logo">
                 </div>
                 <div class="headercart">
-                    <a href="{{ route('cart.index') }}" class="navcartlink"><img class="navcartphoto" src="/storage/img/cart.png" alt="cart"></a>
+                    <a href="{{ url('cart') }}" class="navcartlink"><img class="navcartphoto" src="/storage/img/cart.png" alt="cart">{{ count((array) session('cart')) }}</a>
                 </div>
             </div>
             
@@ -99,7 +99,7 @@
             </div>
         </section>
 
-        </section>
+    </section>
         
         <section id="biografie">
             <main>
@@ -114,53 +114,29 @@
             <div class="bookstitle">
                 <h2 class="headbooktext">Boeken</h2>
             </div>
-                        
-            <div class="books">
-                <div class="booksrowfirst">
-                    <div class="firstbook">
-                        <form action="{{ route('cart.add',$product ?? '') }}" class="booksform" method="POST">
-                            <!-- @method('GET') -->
-                            @csrf
-                            <img class="bookimg" src="/storage/img/Allesmag.png" alt="logo">
+
+            <div class="container products">
+            
+                <div class="row">
+
+                    @foreach($products as $product)
+                    <div class="booksrowfirst">
+                        <div class="thumbnail">
+                            <img class="bookimg" src="{{ $product->photo }} " alt="logo">
                             <div class="firstbookinfo">
-                                <h4 class="booktitle">Alles mag</h4>
-                                <p class="bookprice">€ 22,50</p>
-                                <button class="shop-item-button"><img class="cartphoto" src="/storage/img/cart.png" alt="cart"></button>
+                                <h4 class="booktitle">{{ $product->name }}</h4>
+                                <p class="bookprice">Prijs: € {{ $product->price }}  </p>
+                                <a href="{{ url('add-to-cart/'.$product->id) }}" class="cartbooks" role="button"><img class="cartphoto" src="/storage/img/cart.png" alt="cart"></a>
                             </div>
-                        </form>
-                    </div>  
-                    
-                    <div class="twobook">
-                        <img class="bookimg" src="/storage/img/dewereld.png" alt="logo">
-                        <div class="twobookinfo">
-                            <h4 class="booktitle">De wereld</h4>
-                            <p class="bookprice">€ 24,00</p>
-                            <a href="" class="cartbutton"><img class="cartphoto" src="/storage/img/cart.png" alt="cart"></a>
                         </div>
                     </div>
-                </div>
-                
-                <div class="booksrowsecond">
-                    <div class="threebook">
-                        <img class="bookimg" src="/storage/img/dewaarheid.png" alt="logo">                   
-                        <div class="threebookinfo">
-                            <h4 class="booktitle">De waarheid</h4>
-                            <p class="bookprice">€ 22,50</p>
-                            <a href="" class="cartbutton"><img class="cartphoto" src="/storage/img/cart.png" alt="cart"></a>
-                        </div>
-                    </div>
-                    
-                    <div class="fourbook">
-                        <img class="bookimg" src="/storage/img/magdit.png" alt="logo">
-                        <div class="fourbookinfo">
-                            <h4 class="booktitle">Mag dit?</h4>
-                            <p class="bookprice">€ 24,00</p>
-                            <a href="" class="cartbutton"><img class="cartphoto" src="/storage/img/cart.png" alt="cart"></a>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
         </section>
+    
+
 
         <section id="socialmedia">
             <div class="socialmediainstagram">
@@ -266,6 +242,7 @@
             <div class="contact">
                 <h3 class="contactinfo">Contact</h3>
             </div>
+
             <div class="contactmaps">
                 <div class="contactinfotext">
                     <p class="name">Naam:</p>

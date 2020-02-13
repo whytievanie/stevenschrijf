@@ -52,7 +52,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
     Route::get('/', 'ProductsController@index');
 
-    Route::get('cart', 'ProductsController@icart');
+    Route::get('cart', 'ProductsController@cart');
 
     Route::get('add-to-cart/{id}', 'ProductsController@addToCart');
 
