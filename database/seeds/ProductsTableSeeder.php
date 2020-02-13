@@ -12,26 +12,30 @@ class ProductsTableSeeder extends Seeder
    public function run()
    {
       \App\Model\Product::insert([
-         'image' => '/storage/img/Allesmag.png',
          'name' => 'Alles mag',
+         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem corporis cum molestias sint!',
+         'photo' => '/storage/img/Allesmag.png',
          'price' => '22.50'
       ]);
 
       \App\Model\Product::insert([
-         'image' => '/storage/img/dewereld.png',
          'name' => 'De wereld',
+         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem corporis cum molestias sint!',
+         'photo' => '/storage/img/dewereld.png',
          'price' => '24.00'
       ]);
 
       \App\Model\Product::insert([
-         'image' => '/storage/img/dewaarheid.png',
          'name' => 'De waarheid',
+         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem corporis cum molestias sint!',
+         'photo' => '/storage/img/dewaarheid.png',
          'price' => '22.50'
       ]);
 
       \App\Model\product::insert([
-         'image' => '/storage/img/magdit.png',
          'name' => 'Mag dit?',
+         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem corporis cum molestias sint!',
+         'photo' => '/storage/img/magdit.png',
          'price' => '24.00'
       ]);           
    }

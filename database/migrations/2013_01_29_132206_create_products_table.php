@@ -15,9 +15,10 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('image');
-            $table->string('name');
-            $table->decimal('price');
+            $table->string("name", 255)->nullable();
+            $table->text("description")->nullabe();
+            $table->string("photo", 255)->nullabe();
+            $table->decimal("price", 6, 2);
             $table->timestamps();
         });
     }
