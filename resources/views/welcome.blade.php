@@ -78,9 +78,6 @@
                 <div class="navbarphoto">
                     <img src="/storage/img/logosteven.jpg" alt="logo">
                 </div>
-                <div class="headercart">
-                    <a href="{{ url('cart') }}" class="navcartlink"><img class="navcartphoto" src="/storage/img/cart.png" alt="cart">{{ count((array) session('cart')) }}</a>
-                </div>
             </div>
             
             <nav>
@@ -125,8 +122,7 @@
                             <img class="bookimg" src="{{ $product->photo }} " alt="logo">
                             <div class="firstbookinfo">
                                 <h4 class="booktitle">{{ $product->name }}</h4>
-                                <p class="bookprice">Prijs: € {{ $product->price }}  </p>
-                                <a href="{{ url('add-to-cart/'.$product->id) }}" class="cartbooks" role="button"><img class="cartphoto" src="/storage/img/cart.png" alt="cart"></a>
+                                <a href="#contact" class="cartbooks" role="button">Interesse</a>
                             </div>
                         </div>
                     </div>
@@ -276,12 +272,30 @@
 
             <section class="questionsection">
                 <div class="questionsformsection">
-                    <h4 class="headquestionstext">Heb jullie nog vragen?</h4>
+                    <h4 class="headquestionstext">Heb jullie nog vragen of hebben jullie interesse in een van de boeken</h4>
+                    <h4 class="headquestionstext">Neem dat contact op met mij</h4>
                 </div>
                 
                 <div class="qustionsformdiv">
-                    <form action="{{ route('question.store') }}" method="POST" enctype="multipart/form-data">
-                        @method('GET')
+
+                    @if(count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <button type="button" class="close" data-dismiss="alert">x</button>
+                            <ul>
+                                @foreach($errors->all() as $error)
+                                    <li>{{$error}}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    @if($message = Session::get('succes'))
+                        <div class="alert alert-succes alert-block">
+                            <button type="button" class="close" data-dismiss="alert">X</button>
+                            <strong>{{ $message }}</strong>
+                        </div>
+                    @endif
+                    <form action="{{url('sendemail/send')}}" method="POST">
                         @csrf
                         <div>
                             <label class="namelabel" for="name">Naam en/of achternaam:</label>
@@ -290,19 +304,19 @@
                             <input class="nameinput" type="text" name="name">
                         </div>
                         <div class="maildiv">
-                            <label class="maillabel" for="mail">Email:</label>
+                            <label class="maillabel" for="email">Email:</label>
                         </div>
                         <div>
-                            <input class="mailinput" type="email" name="mail">
+                            <input class="mailinput" type="text" name="email">
                         </div>
                         <div>
-                            <label class="questionslabel" for="question">Uw vragen:</label>
+                            <label class="questionslabel" for="message">Uw vragen:</label>
                         </div>
                         <div>
-                            <textarea name="question" id="pmSubject" class="questionstextarea" rows="7" cols="70"></textarea>
+                            <textarea name="message" class="questionstextarea" rows="7" cols="70"></textarea>
                         </div>
                         <div>
-                            <button class="buttonquestions">Verzenden</button>
+                            <input type="submit" name="send" value="Verzenden" class="buttonquestions">
                         </div>
                     </form>
                 </div>

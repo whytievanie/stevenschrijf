@@ -685,6 +685,10 @@ p {
     margin-top: 10px;
 }
 
+.alert-danger {
+    width: 30%;
+}
+
 .navcartlink {
     color: black;
     font-weight: bold;

@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 // Route::resource('cart', 'CartController');
-Route::resource('question', 'QuestionController');
+// Route::resource('question', 'QuestionController');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -52,13 +52,17 @@ Route::get('/home', 'HomeController@index')->name('home');
 
     Route::get('/', 'ProductsController@index');
 
-    Route::get('cart', 'ProductsController@cart');
+    // Route::get('cart', 'ProductsController@cart');
 
-    Route::get('add-to-cart/{id}', 'ProductsController@addToCart');
+    // Route::get('add-to-cart/{id}', 'ProductsController@addToCart');
 
-    Route::patch('update-cart', 'ProductsController@update');
+    // Route::patch('update-cart', 'ProductsController@update');
 
-    Route::delete('remove-from-cart', 'ProductsController@remove');
+    // Route::delete('remove-from-cart', 'ProductsController@remove');
+
+    Route::get('/sendemail', 'SendEmailController@index');
+
+    Route::post('/sendemail/send', 'SendEmailController@send');
     
 // });
 
