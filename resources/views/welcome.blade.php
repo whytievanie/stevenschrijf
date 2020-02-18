@@ -100,26 +100,26 @@
         </section>
 
     </section>
-        
-        <section id="biografie">
-            <main>
-                <div class="biografie">
-                    <h2 class="biografieheadtext">Biografie</h2>
-                    <p class="biografietext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem corporis cum molestias sint! Aliquam aliquid animi debitis dolor, eligendi facilis illo inventore labore laboriosam nam nemo, officia perspiciatis sed tempore unde. Blanditiis commodi debitis dignissimos dolorum ducimus, eum facere fugit incidunt laborum molestias nemo non odio officia quaerat quisquam quo sed tempora temporibus veritatis vero. Consectetur eveniet facere libero maxime, nisi perspiciatis quibusdam velit. A alias, autem deleniti deserunt laboriosam maxime neque odit quia quibusdam quis sed vero! A provident suscipit vero. Aliquam deserunt dignissimos eos expedita iste labore laborum natus nemo perferendis placeat, quae rerum, sapiente, tempora ullam?</p>
-                </div>
-            </main>
-        </section>
-        
-        <section id="boeken" class="bookssection">
-            <div class="bookstitle">
-                <h2 class="headbooktext">Boeken</h2>
+
+    <section id="biografie">
+        <main>
+            <div class="biografie">
+                <h2 class="biografieheadtext">Biografie</h2>
+                <p class="biografietext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem corporis cum molestias sint! Aliquam aliquid animi debitis dolor, eligendi facilis illo inventore labore laboriosam nam nemo, officia perspiciatis sed tempore unde. Blanditiis commodi debitis dignissimos dolorum ducimus, eum facere fugit incidunt laborum molestias nemo non odio officia quaerat quisquam quo sed tempora temporibus veritatis vero. Consectetur eveniet facere libero maxime, nisi perspiciatis quibusdam velit. A alias, autem deleniti deserunt laboriosam maxime neque odit quia quibusdam quis sed vero! A provident suscipit vero. Aliquam deserunt dignissimos eos expedita iste labore laborum natus nemo perferendis placeat, quae rerum, sapiente, tempora ullam?</p>
             </div>
+        </main>
+    </section>
+        
+    <section id="boeken" class="bookssection">
+        <div class="bookstitle">
+            <h2 class="headbooktext">Boeken</h2>
+        </div>
 
-            <div class="container products">
+        <div class="container products">
             
-                <div class="row">
+            <div class="row">
 
-                    @foreach($products as $product)
+                @foreach($products as $product)
                     <div class="booksrowfirst">
                         <div class="thumbnail">
                             <img class="bookimg" src="{{ $product->photo }} " alt="logo">
@@ -130,9 +130,7 @@
                             </div>
                         </div>
                     </div>
-                    @endforeach
-
-                </div>
+                @endforeach
             </div>
         </section>
     
