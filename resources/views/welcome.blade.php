@@ -189,7 +189,7 @@
                 <div class="bookingtext">
                     <h4 class="bookingle">Lezingen of presentatie boeken</h4>
                     <div class="booking">
-                        <form onsubmit="return removeDummy(); enctype="multipart/form-data" class="bookingform" action="" method="POST">
+                        <form onsubmit="return removeDummy(); class="bookingform" action="" method="POST">
                             @csrf
                             <div>
                                 <label class="guestnamelabel" for="guestname">Naam:</label>
