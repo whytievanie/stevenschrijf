@@ -30,6 +30,7 @@ class SendMail extends Mailable
      */
     public function build()
     {
-        return $this->from('stevenschrijft@outlook.com')->subject('Nieuw vraag of vragen')->view('dynamic_email_template')->with('data', $this->data);
+        // return $this->from('stevenschrijft@outlook.com')->subject('Nieuw vraag of vragen')->view('dynamic_email_template')->with('data', $this->data);
+        return $this->from('esmayilmaz2020@outlook.com')->subject('Nieuw vraag of vragen')->view('dynamic_email_template')->with('data', $this->data);
     }
 }
