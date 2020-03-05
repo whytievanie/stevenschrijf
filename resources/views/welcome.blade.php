@@ -50,8 +50,9 @@
         });
 
     </script>
-
+    
     <script type="text/JavaScript">
+
             function createNewElement() {
                 // First create a DIV element.
                 var txtNewInputBox = document.createElement('div');
@@ -66,11 +67,125 @@
     </script>
 
     <script>
+    
+    $(window).load(function () {
 
-    </script>
+        $(".trigger_popup_fricc").click(function(){
+            $('.hover_bkgr_fricc').show();
+        });
+
+        $('.hover_bkgr_fricc').click(function(){
+            $('.hover_bkgr_fricc').hide();
+        });
+
+        $('.popupCloseButton').click(function(){
+            $('.hover_bkgr_fricc').hide();
+        });
+
+    });
+
+    $(window).load(function () {
+
+        $(".trigger_popup_friccone").click(function(){
+            $('.hover_bkgr_friccone').show();
+        });
+
+        $('.hover_bkgr_friccone').click(function(){
+            $('.hover_bkgr_friccone').hide();
+        });
+
+        $('.popupCloseButton').click(function(){
+            $('.hover_bkgr_friccone').hide();
+        });
+
+    });
+
+    $(window).load(function () {
+
+        $(".trigger_popup_frictwo").click(function(){
+            $('.hover_bkgr_frictwo').show();
+        });
+
+        $('.hover_bkgr_frictwo').click(function(){
+            $('.hover_bkgr_frictwo').hide();
+        });
+
+        $('.popupCloseButton').click(function(){
+            $('.hover_bkgr_frictwo').hide();
+        });
+
+    });
+
+    $(window).load(function () {
+
+        $(".trigger_popup_fricthree").click(function(){
+            $('.hover_bkgr_fricthree').show();
+        });
+
+        $('.hover_bkgr_fricthree').click(function(){
+            $('.hover_bkgr_fricthree').hide();
+        });
+
+        $('.popupCloseButton').click(function(){
+            $('.hover_bkgr_fricthree').hide();
+        });
+
+    });
+
+</script>
 
     </head>
     <body>
+
+    <div class="hover_bkgr_fricc">
+        <span class="helper"></span>
+        <div>
+            <h2 class="headtextinfobook">Meer informatie over dit boek</h2>
+            <div class="popupCloseButton">&times;</div>       
+                <img id="bookone" src="/storage/img/achterkantAllesmag.png" alt="logo">
+                <h4 class="headtextbookinfo">Iedereen geef je een kans, maakt niet uit wat je bent en hoe je eruit ziet, want jij bent perfect.</h4>
+                <p class="generinlinfo">In dit boeken zitten gedichten die ik zelf heb geschreven. Hieronder is meer informatie over de gedichten.</p>
+                <p class="bookoneinfopopus">Steven Gerarads is een 21de jarige jongeman uit Breda. Hij doet aan hockey en werkt bij Avans Hogeschool als schoonmaker. Volgens zijn achtergrond heeft hij een verstandelijke beperking, maar daar geeft hij niks om Althans, er geen vervelende opmerkingen worden gemaakt. Een aantal jaren geleden is Steven begonnen met dichten. Hij vindt het leuk om boze, verdrietige en sterke gevoelens op papier te zitten. Door het van zich af te schrijven maakt hij zich sterk en vrolijker. Ook geeft hij lezingen over zijn leven en voorlichten op scholen over pesten, dat doet hij graag en met zijn hart. Hij schrijft helemaal op gevoel en spreek helemaal naar zijn eigen mening. Steven leeft naar dromen en door doorzettingvermogen, eigenwijsheid en te wil, lukt het hem stapje voor stapje.</p>
+                <p class="endheadtextbookinfo">Iedereen geef je een kans, maakt niet uit wat je bent en hoe je eruit ziet, want jij bent perfect.</p>
+            </div>
+        </div>
+
+    <div class="hover_bkgr_friccone">
+        <span class="helper"></span>
+        <div>
+        <h2 class="headtextinfobook">Meer informatie over dit boek</h2>
+            <div class="popupCloseButton">&times;</div>
+                <img id="bookone" src="/storage/img/achterkantdewereld.png" alt="logo">
+                <p class="generinlinfo">In dit boeken zitten gedichten die ik zelf heb geschreven. Hieronder is meer informatie over de gedichten.</p>
+                <h4 class="headtextbookinfo">Steven Gerards wil zich weer bewijzen met een nieuw boek.</h4>
+                <p class="bookoneinfopopus">Steven Gerards (23) uit Breda heeft een nieuw rugzakje aangeschaft voor dit project. In dit boek laat hij zijn fantasie stromen en geeft hij zijn nieuwe kijk op de wereld. Zijn wereld is mooier en dat wil hij graag laten zien. Of u het met hem eens bent? Dat mag u zelf beslissen.</p>
+                <p class="bookoneinfopopusone">Steven Gerards presteert met trots zijn 3de boek 'de wereld' Lees over zijn gevoelens en oordeel zelf wiens wereld mooier is.</p>
+                <p class="endheadtextbookinfo">'Ik ben ervan overtuigt dat u voor mijn wereld kiest' aldus Steven.</p>
+            </div>
+        </div>
+
+    <div class="hover_bkgr_frictwo">
+        <span class="helper"></span>
+        <div>
+            <h2 class="headtextinfobook">Meer informatie over dit boek</h2>
+            <div class="popupCloseButton">&times;</div>
+                <img id="bookone" src="/storage/img/achterkantdewaarheid.png" alt="logo">
+                <p class="generinlinfo">In dit boeken zitten gedichten die ik zelf heb geschreven. Hieronder is meer informatie over de gedichten.</p>
+                <p class="bookoneinfopopus">Hi, Steven Gerards (07-05-1995) is er weer! Steven is een jongeman uit Breda met een rugzakje. Hij doet aan hockey en natuurlijk, aan dichten. Je kunt hem kennen van internet wellicht, is het je buurman geweest of misschien heeft hij wel een lezing gegeven over zijn leven. Hij geeft voorlichting op scholen over pesten.</p>
+                <p class="bookoneinfopopusone">Met trots, brengt hij zijn tweede gedichtenbundel uit, genaamd 'de waarheid' Deze gedichten, zijn allemaal gebaseerd op gevoel.</p>
+                <p class="endheadtextbookinfo">'nog steeds praat ik vanuit mijn hart en nog steeds ben ik eigenwijs genoeg om door te zetten, maak niet uit wat mensen zeggen' aldus Steven. 'Durf jij de waarheid te openen?</p>
+            </div>
+        </div>
+
+    <div class="hover_bkgr_fricthree">
+        <span class="helper"></span>
+        <div>
+            <h2 class="headtextinfobook">Meer informatie over dit boek</h2>
+            <div class="popupCloseButton">&times;</div>
+                <img id="bookone" src="/storage/img/achterkantmagdit.png" alt="logo">
+                <p class="textfourbookinfo">'Steven (07-05-1995) Mijn kunstwerk/boek, mijn regels, mijn gedichten, mijn verhalen, mijn vise' Na al die jaren is Steven Gerards nog lekker eigenwijs.  Dit boek is zijn 4de boek en het heet: Mag dit? 'niets is wat het lijkt' en dat klopt ook. Dit boek heeft geen einde, maar heeft wel twee beginnen, hoe kan dat? Het boek bevat méér verhalen dan elke ander boek van hem. Dit is zijn dikste gedichtbundel ooit! Dit boek bevat één vriendelijke kant en één kwaadaardige kant. U mag kiezen wat het begin wordt.</p>
+            </div>
+        </div>
         
     <section id="home">
         <header>
@@ -116,17 +231,46 @@
             
             <div class="row">
 
-                @foreach($products as $product)
                     <div class="booksrowfirst">
                         <div class="thumbnail">
-                            <img class="bookimg" src="{{ $product->photo }} " alt="logo">
+                        <a class="trigger_popup_fricc"><img id="bookone" class="bookimg" src="/storage/img/Allesmag.png" alt="logo"></a>
                             <div class="firstbookinfo">
-                                <h4 class="booktitle">{{ $product->name }}</h4>
+                                <h4 class="booktitle">Alles mag</h4>
                                 <a href="#contact" class="cartbooks" role="button">Interesse</a>
                             </div>
                         </div>
                     </div>
-                @endforeach
+
+                    <div class="booksrowtwo">
+                        <div class="thumbnail">
+                        <a class="trigger_popup_friccone"><img id="bookone" class="bookimg" src="/storage/img/dewereld.png" alt="logo"></a>
+                            <div class="firstbookinfo">
+                                <h4 class="booktitle">De wereld</h4>
+                                <a href="#contact" class="cartbooks" role="button">Interesse</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="booksrowthree">
+                        <div class="thumbnail">
+                        <a class="trigger_popup_frictwo"><img id="bookone" class="bookimg" src="/storage/img/dewaarheid.png" alt="logo"></a>
+                            <div class="firstbookinfo">
+                                <h4 class="booktitle">De waarheid</h4>
+                                <a href="#contact" class="cartbooks" role="button">Interesse</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="booksrowfour">
+                        <div class="thumbnail">
+                        <a class="trigger_popup_fricthree"><img id="bookone" class="bookimg" src="/storage/img/magdit.png" alt="logo"></a>
+                            <div class="firstbookinfo">
+                                <h4 class="booktitle">Mag dit?</h4>
+                                <a href="#contact" class="cartbooks" role="button">Interesse</a>
+                            </div>
+                        </div>
+                    </div>
+
             </div>
         </section>
     
@@ -193,23 +337,17 @@
                             <div id="inputnames">
                                 <input id="guestname" class="bookingnameinput" type="text">
                             </div>
-                            <div id="newElementId">     
+                            <div>
+                                <label class="guestnamelabel" for="guestname">Bedrijfsnaam:</label>
                             </div>
-                            <div id="plusandminbutton">
-                                <input class="add_field_button" type="button" value="+" onclick="createNewElement();"/>
-                                <input id='btnRemoveDummy' class="removebutton" type="button" value="-" onclick="removeDummy()"/>
+                            <div id="inputnames">
+                                <input id="guestname" class="companynameinput" type="text">
                             </div>
                             <div>
-                                <label class="startdatelabel" for="start_date">Startdatum:</label>
+                                <label class="startdatelabel" for="start_date">Datum:</label>
                             </div>
                             <div>
                                 <input class="startdateinput" type="date" name="start_date">
-                            </div>
-                            <div>
-                                <label class="enddatelabel" for="end_date">Einddatum:</label>
-                            </div>
-                            <div>
-                                <input class="enddateinput" type="date" name="end_date">
                             </div>
                             <div>
                                 <label class="startdatelabel" for="start_time">Begintijd:</label>
@@ -336,6 +474,6 @@
                     <p class="copyrighttext">Copyright © 2020 Steven Gerarads. All rights reserved</p>
                 </div>
             </footer>
-            
+
         </body>
     </html>
