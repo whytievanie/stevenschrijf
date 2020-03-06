@@ -749,6 +749,10 @@ p {
     margin-bottom: 20px;
 }
 
+.cartbooks {
+    font-size: 18px; 
+}
+
 .companynameinput {
     margin-bottom: 20px;
     width: 100%;

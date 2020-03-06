@@ -143,8 +143,8 @@
             <h2 class="headtextinfobook">Meer informatie over dit boek</h2>
             <div class="popupCloseButton">&times;</div>       
                 <img id="bookone" src="/storage/img/achterkantAllesmag.png" alt="logo">
-                <h4 class="headtextbookinfo">Iedereen geef je een kans, maakt niet uit wat je bent en hoe je eruit ziet, want jij bent perfect.</h4>
                 <p class="generinlinfo">In dit boeken zitten gedichten die ik zelf heb geschreven. Hieronder is meer informatie over de gedichten.</p>
+                <h4 class="headtextbookinfo">Iedereen geef je een kans, maakt niet uit wat je bent en hoe je eruit ziet, want jij bent perfect.</h4>
                 <p class="bookoneinfopopus">Steven Gerarads is een 21de jarige jongeman uit Breda. Hij doet aan hockey en werkt bij Avans Hogeschool als schoonmaker. Volgens zijn achtergrond heeft hij een verstandelijke beperking, maar daar geeft hij niks om Althans, er geen vervelende opmerkingen worden gemaakt. Een aantal jaren geleden is Steven begonnen met dichten. Hij vindt het leuk om boze, verdrietige en sterke gevoelens op papier te zitten. Door het van zich af te schrijven maakt hij zich sterk en vrolijker. Ook geeft hij lezingen over zijn leven en voorlichten op scholen over pesten, dat doet hij graag en met zijn hart. Hij schrijft helemaal op gevoel en spreek helemaal naar zijn eigen mening. Steven leeft naar dromen en door doorzettingvermogen, eigenwijsheid en te wil, lukt het hem stapje voor stapje.</p>
                 <p class="endheadtextbookinfo">Iedereen geef je een kans, maakt niet uit wat je bent en hoe je eruit ziet, want jij bent perfect.</p>
             </div>
@@ -183,6 +183,7 @@
             <h2 class="headtextinfobook">Meer informatie over dit boek</h2>
             <div class="popupCloseButton">&times;</div>
                 <img id="bookone" src="/storage/img/achterkantmagdit.png" alt="logo">
+                <p class="generinlinfo">In dit boeken zitten gedichten die ik zelf heb geschreven. Hieronder is meer informatie over de gedichten.</p>
                 <p class="textfourbookinfo">'Steven (07-05-1995) Mijn kunstwerk/boek, mijn regels, mijn gedichten, mijn verhalen, mijn vise' Na al die jaren is Steven Gerards nog lekker eigenwijs.  Dit boek is zijn 4de boek en het heet: Mag dit? 'niets is wat het lijkt' en dat klopt ook. Dit boek heeft geen einde, maar heeft wel twee beginnen, hoe kan dat? Het boek bevat méér verhalen dan elke ander boek van hem. Dit is zijn dikste gedichtbundel ooit! Dit boek bevat één vriendelijke kant en één kwaadaardige kant. U mag kiezen wat het begin wordt.</p>
             </div>
         </div>
@@ -236,7 +237,7 @@
                         <a class="trigger_popup_fricc"><img id="bookone" class="bookimg" src="/storage/img/Allesmag.png" alt="logo"></a>
                             <div class="firstbookinfo">
                                 <h4 class="booktitle">Alles mag</h4>
-                                <a href="#contact" class="cartbooks" role="button">Interesse</a>
+                                <a href="#contact" class="cartbooks" role="button">Interesse?</a>
                             </div>
                         </div>
                     </div>
@@ -246,7 +247,7 @@
                         <a class="trigger_popup_friccone"><img id="bookone" class="bookimg" src="/storage/img/dewereld.png" alt="logo"></a>
                             <div class="firstbookinfo">
                                 <h4 class="booktitle">De wereld</h4>
-                                <a href="#contact" class="cartbooks" role="button">Interesse</a>
+                                <a href="#contact" class="cartbooks" role="button">Interesse?</a>
                             </div>
                         </div>
                     </div>
@@ -256,7 +257,7 @@
                         <a class="trigger_popup_frictwo"><img id="bookone" class="bookimg" src="/storage/img/dewaarheid.png" alt="logo"></a>
                             <div class="firstbookinfo">
                                 <h4 class="booktitle">De waarheid</h4>
-                                <a href="#contact" class="cartbooks" role="button">Interesse</a>
+                                <a href="#contact" class="cartbooks" role="button">Interesse?</a>
                             </div>
                         </div>
                     </div>
@@ -266,7 +267,7 @@
                         <a class="trigger_popup_fricthree"><img id="bookone" class="bookimg" src="/storage/img/magdit.png" alt="logo"></a>
                             <div class="firstbookinfo">
                                 <h4 class="booktitle">Mag dit?</h4>
-                                <a href="#contact" class="cartbooks" role="button">Interesse</a>
+                                <a href="#contact" class="cartbooks" role="button">Interesse?</a>
                             </div>
                         </div>
                     </div>
