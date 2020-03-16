@@ -64,7 +64,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
     Route::post('/sendemail/send', 'SendEmailController@send');
 
-    Route::get('instagram', 'InstagramController@index');
+    Route::resource('events', 'EventsController');
     
 // });
 

@@ -257,12 +257,18 @@ nav {
 }
 
 .socialmedialinks {
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.errorcalendar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .facebook {

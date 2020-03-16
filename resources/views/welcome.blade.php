@@ -323,6 +323,19 @@
             <div class="agenda">
                 <h3 class="agendatext">Agenda</h3>
             </div>
+
+            <div class="errorcalendar">
+                @if(count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{$error}}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+            </div>
             
             <div class="calenderflex">
                 <div id='calendar'>   
@@ -330,40 +343,40 @@
                 <div class="bookingtext">
                     <h4 class="bookingle">Lezingen of presentatie boeken</h4>
                     <div class="booking">
-                        <form onsubmit="return removeDummy(); class="bookingform" action="" method="POST">
+                        <form action="{{ route('events.store') }}" method="POST">
                             @csrf
                             <div>
                                 <label class="guestnamelabel" for="guestname">Naam:</label>
                             </div>
                             <div id="inputnames">
-                                <input id="guestname" class="bookingnameinput" type="text">
+                                <input type="text" name="guestname" id="guestname" class="bookingnameinput">
                             </div>
                             <div>
-                                <label class="guestnamelabel" for="guestname">Bedrijfsnaam:</label>
+                                <label class="guestnamelabel" for="companyname">Bedrijfsnaam:</label>
                             </div>
                             <div id="inputnames">
-                                <input id="guestname" class="companynameinput" type="text">
+                                <input type="text" name="companyname" id="companyname" class="companynameinput">
                             </div>
                             <div>
                                 <label class="startdatelabel" for="start_date">Datum:</label>
                             </div>
                             <div>
-                                <input class="startdateinput" type="date" name="start_date">
+                                <input class="startdateinput" type="date" id="start_date" name="start_date">
                             </div>
                             <div>
                                 <label class="startdatelabel" for="start_time">Begintijd:</label>
                             </div>
                             <div>
-                                <input class="starttimeinput" type="time" name="start_time">
+                                <input class="starttimeinput" type="time" id="start_time" name="start_time">
                             </div>
                             <div>
                                 <label class="enddatelabel" for="end_time">Eindtijd:</label>
                             </div>
                             <div>
-                                <input class="endtimeinput" type="time" name="end_time">
+                                <input class="endtimeinput" type="time" id="end_time" name="end_time">
                             </div>
                             <div>
-                                <input name="bookingbutton" class="buttonbooking" type="submit" value="Verzenden">
+                                <button type="submit" class="buttonbooking">Verzenden</button> 
                             </div>
                         </form>
                     </div>
@@ -476,5 +489,6 @@
                 </div>
             </footer>
 
+            <script src="{{ asset('js/app.js') }}"></script>
         </body>
     </html>
